@@ -1,0 +1,157 @@
+<app-toolbar></app-toolbar>
+<div class="content">
+  <ion-segment color="tertiary" scrollable (ionChange)="segmentChanged($event)" value="cars" [(ngModel)]="type">
+    <ion-segment-button value="furniture">
+      <div style="margin-top:20px;">
+        <svg version="1.1"  width="40" class="tabIcon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 448.068 448.068" style="enable-background:new 0 0 448.068 448.068;" xml:space="preserve"><g><g><g><path d="M94.344,180.621c4.984,7.389,8.992,15.391,11.925,23.808c8.053,22.4,10.475,49.067,11.083,67.605h213.333c0.619-18.528,3.04-45.216,11.093-67.616c2.924-8.406,6.925-16.398,11.904-23.776c6.514-9.338,14.616-17.461,23.936-24c3.365-2.45,6.865-4.708,10.485-6.763c-24.501-54.496-88.864-91.179-164.085-91.179c-71.275,0-134.144,37.835-159.616,93.867c2.069,1.333,4.064,2.699,6.005,4.075C79.714,163.189,87.813,171.303,94.344,180.621z"/><path d="M440.083,172.898c-5.397-5.408-12.064-6.891-16.053-7.776c-5.49-1.221-11.182-1.221-16.672,0c-6.976,1.568-11.381,4.672-17.493,8.981c-7.256,5.088-13.566,11.405-18.645,18.667c-3.9,5.874-7.05,12.213-9.376,18.869c-8.757,24.128-10.037,54.891-10.048,71.061c0,5.891-4.776,10.667-10.667,10.667h-234.24c-5.891,0-10.667-4.776-10.667-10.667c0-16.181-1.344-46.933-10.016-71.061c-2.334-6.662-5.487-13.007-9.387-18.891c-5.09-7.26-11.407-13.577-18.667-18.667c-6.112-4.267-10.528-7.467-17.515-8.992c-5.482-1.232-11.169-1.232-16.651,0c-4,0.885-10.667,2.379-16.075,7.787c-0.085,0.096-9.6,9.963-7.648,22.837c2.133,13.771,15.285,21.419,23.637,23.189c3.036,0.639,6.179,0.569,9.184-0.203c3.627-0.693,8.608-1.653,14.261,0.907c17.803,8.043,19.744,38.549,6.613,105.077c6.709,19.712,15.157,21.237,21.557,21.984h20.693v32c0,5.891,4.776,10.667,10.667,10.667h10.667c5.891,0,10.667-4.776,10.667-10.667v-31.968h191.637v32c0,5.891,4.776,10.667,10.667,10.667h10.667c5.891,0,10.667-4.776,10.667-10.667v-32h20.693c6.4-0.736,14.848-2.272,21.557-21.984c-13.131-66.517-11.189-97.067,6.613-105.077c5.653-2.56,10.667-1.611,14.272-0.907c3.011,0.755,6.154,0.821,9.195,0.192c8.352-1.771,21.525-9.419,23.637-23.179C449.725,182.871,440.179,173.005,440.083,172.898z"/></g></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+        <br>
+        <span class="tabTitle">Furniture</span>
+      </div>
+    </ion-segment-button>
+    <ion-segment-button value="cars">
+      <div style="margin-top:20px;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"  width="40" class="tabIcon"><g id="_13-car" data-name="13-car"><g id="glyph"><path d="M120,236a52,52,0,1,0,52,52A52.059,52.059,0,0,0,120,236Zm0,76a24,24,0,1,1,24-24A24,24,0,0,1,120,312Z"/><path d="M408,236a52,52,0,1,0,52,52A52.059,52.059,0,0,0,408,236Zm0,76a24,24,0,1,1,24-24A24,24,0,0,1,408,312Z"/><path d="M477.4,193.04,384,176l-79.515-65.975A44.109,44.109,0,0,0,276.526,100H159.38a43.785,43.785,0,0,0-34.359,16.514L74.232,176H40A36.04,36.04,0,0,0,4,212v44a44.049,44.049,0,0,0,44,44h9.145a64,64,0,1,1,125.71,0h162.29a64,64,0,1,1,125.71,0H472a36.04,36.04,0,0,0,36-36V228.632A35.791,35.791,0,0,0,477.4,193.04ZM180,164a12,12,0,0,1-12,12H115.245a6,6,0,0,1-4.563-9.9l34.916-40.9A12,12,0,0,1,154.724,121H168a12,12,0,0,1,12,12Zm60,56H224a12,12,0,0,1,0-24h16a12,12,0,0,1,0,24Zm94.479-43.706-114.507-.266a12,12,0,0,1-11.972-12V133a12,12,0,0,1,12-12h57.548a12,12,0,0,1,7.433,2.58l53.228,42A6,6,0,0,1,334.479,176.294Z"/></g></g></svg>
+        <br>
+        <span class="tabTitle">Cars</span>
+      </div>
+    </ion-segment-button>
+    <ion-segment-button value="electronics">
+      <div style="margin-top:20px;">
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  width="40" class="tabIcon" viewBox="0 0 70.07 70.07" style="enable-background:new 0 0 70.07 70.07;" xml:space="preserve"><g><g> <path d="M65.094,32.195h-6.982h-0.934c-2.064,0-3.738,1.674-3.738,3.745v0.406c0,2.073,1.674,3.748,3.741,3.748h6.989h0.924 c2.068,0,3.747-1.682,3.747-3.748l-0.004-0.411C68.841,33.869,67.162,32.195,65.094,32.195z" /> <path d="M65.098,22.852h-1.649V4.734c0-2.604-2.13-4.734-4.735-4.734H27.475c-2.604,0-4.734,2.131-4.734,4.734v12.999 c-6.301,3.562-12.8,7.283-12.814,7.292C6.399,26.477,1.23,31.162,1.23,42.225c0,0.988,0.065,1.9,0.156,2.781 c0.029,0.258,0.061,0.506,0.096,0.755c0.091,0.647,0.205,1.266,0.341,1.854c0.049,0.21,0.087,0.429,0.14,0.63 c0.183,0.68,0.395,1.318,0.633,1.925c0.12,0.301,0.25,0.575,0.381,0.857c0.14,0.297,0.281,0.589,0.432,0.862 c0.175,0.329,0.35,0.646,0.542,0.947c0.046,0.07,0.096,0.134,0.143,0.205c4.556,6.887,12.961,6.918,12.961,6.918h5.686v5.379 c0,2.601,2.13,4.731,4.734,4.731h31.238c2.605,0,4.735-2.131,4.735-4.731v-6.561h0.722v-0.004h0.921 c2.071,0,3.75-1.675,3.746-3.746l0.004-0.408c-0.004-2.068-1.679-3.738-3.747-3.738H64.17h-6.059h-0.934 c-2.068,0-3.738,1.674-3.738,3.741v0.415c0,2.062,1.674,3.743,3.741,3.743h2.974v2.534h-34.12V27.323 c1.714-1.087,3.301-2.133,4.206-2.834c4.585-3.546,8.937-6.37,9.526-8.931c0.767-3.323-1.784-6.123-6.209-3.824 c-1.394,0.724-4.255,2.311-7.523,4.146V7.502l34.12,0.005V22.85h-2.043v0.004h-0.929c-2.069,0-3.748,1.674-3.748,3.747v0.406 c0,2.072,1.679,3.742,3.743,3.742h0.929h6.059h0.931c2.066,0,3.741-1.674,3.741-3.742V26.59 C68.841,24.531,67.167,22.852,65.098,22.852z M43.09,62.976c1.312,0,2.37,1.059,2.37,2.368c0,1.312-1.059,2.367-2.37,2.367 c-1.307,0-2.363-1.058-2.363-2.367C40.729,64.039,41.788,62.976,43.09,62.976z M48.093,4.558h-9.996 c-0.314,0-0.574-0.255-0.574-0.57c0-0.32,0.26-0.575,0.574-0.575h9.996c0.314,0,0.57,0.254,0.57,0.575 C48.663,4.302,48.407,4.558,48.093,4.558z" /> <path d="M65.094,41.538H64.17h-6.992c-2.064,0-3.743,1.679-3.743,3.746v0.41c0,2.069,1.675,3.743,3.743,3.743h0.929h6.059h0.926 c2.071,0,3.741-1.674,3.746-3.743v-0.41C68.837,43.217,67.167,41.538,65.094,41.538z" /></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+        <br>
+        <span class="tabTitle">Electronics</span>
+      </div>
+    </ion-segment-button>
+    <ion-segment-button value="property">
+      <div style="margin-top:20px;">
+        <svg id="bold" enable-background="new 0 0 24 24" width="40" class="tabIcon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m13.03 1.87-10.99-1.67c-.51-.08-1.03.06-1.42.39-.39.34-.62.83-.62 1.34v21.07c0 .55.45 1 1 1h3.25v-5.25c0-.97.78-1.75 1.75-1.75h2.5c.97 0 1.75.78 1.75 1.75v5.25h4.25v-20.4c0-.86-.62-1.59-1.47-1.73zm-7.53 12.88h-1.5c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h1.5c.414 0 .75.336.75.75s-.336.75-.75.75zm0-3h-1.5c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h1.5c.414 0 .75.336.75.75s-.336.75-.75.75zm0-3h-1.5c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h1.5c.414 0 .75.336.75.75s-.336.75-.75.75zm0-3h-1.5c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h1.5c.414 0 .75.336.75.75s-.336.75-.75.75zm5 9h-1.5c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h1.5c.414 0 .75.336.75.75s-.336.75-.75.75zm0-3h-1.5c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h1.5c.414 0 .75.336.75.75s-.336.75-.75.75zm0-3h-1.5c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h1.5c.414 0 .75.336.75.75s-.336.75-.75.75zm0-3h-1.5c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h1.5c.414 0 .75.336.75.75s-.336.75-.75.75z"/><path d="m22.62 10.842-7.12-1.491v14.649h6.75c.965 0 1.75-.785 1.75-1.75v-9.698c0-.826-.563-1.529-1.38-1.71zm-2.37 10.158h-1.5c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h1.5c.414 0 .75.336.75.75s-.336.75-.75.75zm0-3h-1.5c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h1.5c.414 0 .75.336.75.75s-.336.75-.75.75zm0-3h-1.5c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h1.5c.414 0 .75.336.75.75s-.336.75-.75.75z"/></svg>
+        <br>
+        <span class="tabTitle">Property</span>
+      </div>
+    </ion-segment-button>
+    <ion-segment-button value="digital">
+      <div style="margin-top:20px;">
+        <svg xmlns="http://www.w3.org/2000/svg"  width="40" class="tabIcon" enable-background="new 0 0 32 32" viewBox="0 0 32 32"><path d="M2 14.35449h10.85449c.82861 0 1.5-.67139 1.5-1.5V2c0-.82861-.67139-1.5-1.5-1.5H2C1.17139.5.5 1.17139.5 2v10.85449C.5 13.68311 1.17139 14.35449 2 14.35449zM3.5 3.5h7.85449v7.85449H3.5V3.5zM31.5 2c0-.82861-.67188-1.5-1.5-1.5H19.14551c-.82813 0-1.5.67139-1.5 1.5v10.85449c0 .82861.67188 1.5 1.5 1.5H30c.82813 0 1.5-.67139 1.5-1.5V2zM28.5 11.35449h-7.85449V3.5H28.5V11.35449zM2 31.5h10.85449c.82861 0 1.5-.67139 1.5-1.5V19.14551c0-.82861-.67139-1.5-1.5-1.5H2c-.82861 0-1.5.67139-1.5 1.5V30C.5 30.82861 1.17139 31.5 2 31.5zM3.5 20.64551h7.85449V28.5H3.5V20.64551zM24.57227 17.64551c-3.81934 0-6.92676 3.10742-6.92676 6.92725S20.75293 31.5 24.57227 31.5c3.82031 0 6.92773-3.10742 6.92773-6.92725S28.39258 17.64551 24.57227 17.64551zM24.57227 28.5c-2.16504 0-3.92676-1.76172-3.92676-3.92725s1.76172-3.92725 3.92676-3.92725c2.16602 0 3.92773 1.76172 3.92773 3.92725S26.73828 28.5 24.57227 28.5z"/></svg>
+        <br>
+        <span class="tabTitle">Digital</span>
+      </div>
+    </ion-segment-button>
+  </ion-segment>
+  <ion-content  [ngSwitch]="type">
+    <ion-grid fixed *ngSwitchCase="'cars'">
+      <ion-row *ngFor="let item of counter(10)">
+        <ion-col>
+          <app-product 
+          image="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fyc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=300&q=80"
+          [price]="2500"
+          purchaseDate="12 2020"
+          feature="1200 KM"
+          itemName="Bumblebee"
+          address="Asia, Pacific"
+          ></app-product>
+        </ion-col>
+        <ion-col>
+          <app-product 
+          image="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fyc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=300&q=80"
+          [price]="2500"
+          purchaseDate="12 2020"
+          feature="1200 KM"
+          itemName="Bumblebee"
+          address="Asia, Pacific"></app-product>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid fixed *ngSwitchCase="'furniture'">
+      <ion-row *ngFor="let item of counter(10)">
+        <ion-col>
+          <app-product 
+          image="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=301&q=80"
+          [price]="2500"
+          purchaseDate="12 2020"
+          feature="Acacia Wood"
+          itemName="Chair"
+          address="Asia, Pacific"
+          ></app-product>
+        </ion-col>
+        <ion-col>
+          <app-product 
+          image="https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80"
+          [price]="2500"
+          purchaseDate="12 2020"
+          feature="Spruce Wood"
+          itemName="Office Chair"
+          address="Asia, Pacific"></app-product>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid fixed *ngSwitchCase="'electronics'">
+      <ion-row *ngFor="let item of counter(10)">
+        <ion-col>
+          <app-product 
+          image="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+          [price]="2500"
+          purchaseDate="12 2020"
+          feature="6 + 128 GB"
+          itemName="IPhone 12 Pro"
+          address="Asia, Pacific"
+          ></app-product>
+        </ion-col>
+        <ion-col>
+          <app-product 
+          image="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80"
+          [price]="2500"
+          purchaseDate="12 2020"
+          feature="16 + 512 GB"
+          itemName="Samsung S21 Pro"
+          address="Asia, Pacific"></app-product>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid fixed *ngSwitchCase="'property'">
+      <ion-row *ngFor="let item of counter(10)">
+        <ion-col>
+          <app-product 
+          image="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80"
+          [price]="2500"
+          purchaseDate="12 2020"
+          feature="7 BHK"
+          itemName="Modern Living House"
+          address="Asia, Pacific"
+          ></app-product>
+        </ion-col>
+        <ion-col>
+          <app-product 
+          image="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=753&q=80"
+          [price]="2500"
+          purchaseDate="12 2020"
+          feature="4 BHK"
+          itemName="Modern Cosy House"
+          address="Asia, Pacific"></app-product>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-grid fixed *ngSwitchCase="'digital'">
+      <ion-row *ngFor="let item of counter(10)">
+        <ion-col>
+          <app-product 
+          image="https://images.unsplash.com/photo-1621570276710-2ab2255ab105?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80"
+          [price]="2500"
+          purchaseDate="12 2020"
+          feature="5Y Warranty"
+          itemName="Windows"
+          address="Asia, Pacific"
+          ></app-product>
+        </ion-col>
+        <ion-col>
+          <app-product 
+          image="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fHNvZnR3YXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+          [price]="2500"
+          purchaseDate="12 2020"
+          feature="1Y Warranty"
+          itemName="Code Editor "
+          address="Asia, Pacific"></app-product>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+</div>

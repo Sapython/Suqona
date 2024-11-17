@@ -1,0 +1,120 @@
+ion-tab-bar{
+    width:95vw;
+    font-size: 12px;
+    --background: #173A4E;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px -10px 30px #173a4e6e;
+}
+ion-icon{
+    color:white;
+}
+ion-label{
+    color:white;
+}
+ion-fab{
+    margin-bottom: 25px;
+    z-index: 10;
+    position: absolute;
+    transition: all 0.5s ease-in;
+}
+ion-fab-button{
+    --background:white;
+    border:2px solid #B4FFC7;
+    border-radius: 50px;
+}
+ion-fab-button > ion-icon {
+    color:#173A4E;
+    font-size: 30px;
+}
+ion-tab-button > ion-label{
+    font-size: 10px;
+}
+ion-tabs { 
+    background:transparent; 
+    transition: all 0.5s ease-in;
+}
+#sidebar{
+    height:100vh;
+    width: 70vw;
+    z-index: 500;
+    position: absolute;
+    top:0px;
+    left:-75vw;
+    background-color: #173A4E;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all 0.5s ease-in;
+}
+#sidebar > ion-icon{
+    right: 0px;
+    position: absolute;
+    margin:10px 10px;
+    transition: all 0.5s ease-in
+}
+#sidebar > ion-icon:hover ,#sidebar > ion-icon:active{
+    color:var(--ion-color-tertiary);
+    transform: rotate(90deg);
+}
+#sidebar > div{
+    text-align: center;
+    padding: 10px 10px;
+}
+#sidebar > div > img {
+    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.39);
+    border-radius:60px;
+    padding:0%;
+}
+.username {
+    font-size:20px;
+    color:var(--ion-color-secondary);
+}
+.usermail {
+    font-size:15px;
+    color:var(--ion-color-secondary);
+}
+.address {
+    font-size:12px;
+    color:var(--ion-color-secondary);
+}
+#sidebar > ion-list{
+    --ion-background-color:transparent;
+}
+#sidebar > ion-list > ion-item{
+    left:0px;
+    position: relative;
+    display:block;
+    list-style: none;
+    --background: var(--ion-color-secondary);
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 20px 10px 10px rgba(0, 0, 0, 0.356);
+    color:var(--ion-color-primary)
+}
+.credits {
+    position: absolute;
+    bottom:0px;
+}
+.credits > ion-label {
+    color:#DDE0AE;
+    font-size:15px;
+}
+.credits > ion-row{
+    justify-content:space-between;
+}
+.credits > ion-row > ion-button{
+    --background:#DDE0AE;
+    color:var(--ion-color-primary);
+}
+.credits > ion-row > img {
+    width:50px;
+    height:auto;
+    border: 2px #DDE0AE solid;
+    border-radius: 50%;
+}
+
+

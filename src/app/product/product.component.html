@@ -1,0 +1,11 @@
+<ion-card>
+  <ion-icon (click)="addtoFavourite($event)" name="heart-outline"></ion-icon>
+  <img [src]="image">
+  <ion-label class="price">&#8377;&nbsp;{{price}}</ion-label>
+  <br>
+  <ion-note class="feature">{{purchaseDate}}&nbsp;-&nbsp;{{feature}}</ion-note>
+  <br>
+  <ion-label class="name">{{itemName}}</ion-label>
+  <br>
+  <ion-row class="location"><ion-icon name="location"></ion-icon><ion-note>{{address}}</ion-note></ion-row>
+</ion-card>

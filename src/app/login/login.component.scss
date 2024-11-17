@@ -1,0 +1,89 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+h1{
+    font-size:40px;
+    text-align: center;
+    color:#173A4E;
+}
+img{
+    left:50%;
+    position: relative;
+    width:170px;
+    height:auto;
+    border-radius: 100px;
+    transform: translateX(-50%);
+    box-shadow: 10px 10px 20px #0b27386c;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.mainForm{
+    background-image:url("/assets/loginBlob.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 20px;
+    left:50%;
+    position: relative;
+    transform: translateX(-50%); 
+    padding:70px 0px;
+    width:auto;
+    height:285px;
+}
+.mainForm > ion-input[type="text"]{
+    background-color: white;
+    border-radius: 30px;
+    --padding-start:30px;
+    --padding-end:10px;
+    color:#173A4E;
+    border:none;
+    width:70%;
+    height:40px;
+    margin-bottom: 15px;
+}
+.mainForm > *{
+    margin-left: auto;
+    margin-right: auto;
+}
+ion-row > ion-label, ion-checkbox{
+    margin-left: 10px;
+    vertical-align: center;
+}
+.mainForm > div > ion-row {
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mainForm > div > ion-row > ion-col > ion-button > ion-icon{
+    color:#173A4E;
+}
+.mainForm > ion-button {
+    border:2px solid #173A4E;
+    color:#173A4E;
+    --background:transparent;
+    border-radius: 30px;
+    --border-radius: 30px;
+    font-size: 17px;
+    left:50%;
+    position: relative;
+    transform: translateX(-50%);
+}
+.bottom{
+    position: absolute;
+    bottom:0px;
+    background-image:url("/assets/bottomWaveAuth.png");
+    width:100%;
+    height:100px;
+    padding-top:65px;
+}
+.bottom > p{
+    color:white;
+    width:100%;
+    text-align: center;
+}
+.bottom > p > a {
+    color:#A1DEC1;
+    text-decoration: none;
+    font-weight: 700;
+}

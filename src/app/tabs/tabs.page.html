@@ -1,0 +1,54 @@
+<ion-tabs [ngStyle]="{'filter': (dataProvider.sidebarToggle) ? 'blur(3px)' : 'none' }">
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="tab1">
+      <ion-icon name="home-outline"></ion-icon>
+      <ion-label>Home</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="tab2">
+      <ion-icon name="chatbubble-outline"></ion-icon>
+      <ion-label>Messages</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="tab3">
+      <ion-label style="margin-top: 20px;margin-left:-10px;">Sell</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="tab4">
+      <ion-icon name="heart-outline"></ion-icon>
+      <ion-label>My Ads</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="tab5">
+      <ion-icon name="person-outline"></ion-icon>
+      <ion-label>Profile</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
+<ion-fab [ngStyle]="{'filter': (dataProvider.sidebarToggle) ? 'blur(3px)' : 'none' }" vertical="bottom" horizontal="center">
+  <ion-fab-button>
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+<div id="sidebar" [ngStyle]="{'left': (dataProvider.sidebarToggle) ? '0px' : '-75vw' }">
+  <ion-icon name="close-outline" (click)="toggleSidebar()" size="large"></ion-icon>
+  <div>
+    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YXZhdGFyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" width="110">
+    <br><ion-label class="username">User Name</ion-label><br>
+    <ion-label class="usermail">usermail@host.com</ion-label><br>
+    <ion-label class="address">6th Floor X Building</ion-label>
+  </div>
+  <ion-list>
+    <ion-item>My Ads</ion-item>
+    <ion-item>Category</ion-item>
+    <ion-item>Account Setup</ion-item>
+    <ion-item>Language</ion-item>
+    <ion-item>Help & Contact Support</ion-item>
+  </ion-list>
+  <div class="credits">
+    <ion-label>Copyright by Suquna Inc.</ion-label>
+    <ion-row>
+      <ion-button expand="block" >
+        Log Out
+      </ion-button>
+      <img src="/assets/icon/favicon.png">
+    </ion-row>
+  </div>
+</div>

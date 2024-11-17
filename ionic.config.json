@@ -1,0 +1,7 @@
+{
+  "name": "Suqona",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
